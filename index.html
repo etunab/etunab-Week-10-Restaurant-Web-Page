@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheese Boat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fff7e6;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            margin: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1, h2, h3, .section-heading {
+            color: #d9534f;
+            margin: 0;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        h2 {
+            font-size: 2.5em;
+        }
+        h3 {
+            font-size: 2em;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .banner {
+            width: 100%;
+            height: 400px;
+            background-image: url('Images/IMG_2606.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2.5em;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 600;
+            display: inline-block;
+        }
+        .navbar a:hover {
+            background-color: #d9534f;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section-heading {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+        }
+        p {
+            margin: 15px 0;
+        }
+        img {
+            border-radius: 10px;
+            max-width: 100%;
+        }
+        .menu-item {
+            margin-bottom: 20px;
+        }
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .menu-item__heading--name {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        .reserve-button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #d9534f;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .reserve-button:hover {
+            background-color: #c9302c;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .menu-item {
+            margin-bottom: 30px;
+        }
+        .menu-item__description {
+            font-size: 1em;
+        }
+        .menu-item__price {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #d9534f;
+        }
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar (Sits on top) -->
+    <div class="navbar">
+        <div class="container">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#lunch">Lunch</a>
+            <a href="#dinner">Dinner</a>
+            <a href="#dessert">Dessert</a>
+            <a href="#drinks">Drinks</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#reserve">Reserve</a>
+        </div>
+    </div>
+
+    <!-- Banner Image -->
+    <div class="banner">Welcome to Cheese Boat</div>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container text-center">
+            <img src="images/logo.jpg" alt="Cheese Boat Logo" style="width: 150px; border-radius: 50%;">
+            <h1>Welcome to CHEESE BOAT</h1>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="text">
+                <div class="section-heading">About Us</div>
+                <p>Cheeseboat is a family-owned Georgian bistro offering an eclectic variety of authentic cuisine with locally sourced ingredients. Our goal is to bring you the best dishes from the mighty country of Georgia in a way that will tease your palate and introduce you to a whole new cuisine.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lunch Section -->
+    <section id="lunch" class="section">
+        <div class="container">
+            <div class="section-heading">Lunch</div>
+            <div class="clearfix">
+                <ul>
+                    <li class="menu-item">
+                        <h3>CHEESE BOAT</h3>
+                        <img src="images/IMG_2602.jpg" alt="Cheese Boat">
+                        <p class="menu-item__description">Classic, traditional Cheeseboat (Adjarian Khachapuri) Caldron of cheese in bread w/ egg and butter. Make it a BACON Cheeseboat +5$</p>
+                        <span class="menu-item__price">$21</span>
+                    </li>
+                    <li class="menu-item">
+                        <h3>Steak'n'Mushroom Cheeseboat</h3>
+                        <p class="menu-item__description">Steak and oyster mushrooms. Served w/ Saperavi wine sauce and Parmesan sauce.</p>
+                        <span class="menu-item__price">$28</span>
+                    </li>
+                    <li class="menu-item">
+                        <h3>Meatball Cheeseboat</h3>
+                        <p class="menu-item__description">Handcrafted baked meatballs, spiced to perfection, bedded in cheese and topped with fresh shaved parmesan. Served with our famous green sauce and Parmesan sauce on the side.</p>
+                        <span class="menu-item__price">$28</span>
+                    </li>
+                    <li class="menu-item">
+                        <h3>Shkmeruli Chicken'boat</h3>
+                        <img src="images/IMG_2604.jpg" alt="Shkmeruli Chicken'boat">
+                        <p class="menu-item__description">Traditional Georgian Shkmeruli chicken in creamy garlic sauce. Comes with extra sauce on the side.</p>
+                        <span class="menu-item__price">$25</span>
+                    </li>
+                    <li class="menu-item">
+                        <h3>Imeruli Cheesebread</h3>
+                        <p class="menu-item__description">Most common Cheesebread in Georgia - Circular shaped bread w/ melted cheese mix filling. Add truffle butter for $3.</p>
+                        <span class="menu-item__price">$21</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dinner Section -->
+    <section id="dinner" class="section">
+        <div class="container">
+            <div class="section-heading">Dinner</div>
+            <ul class="clearfix">
+                <li class="menu-item">
+                    <h3>Spinach Cheesebread</h3>
+                    <img src="images/IMG_2607.jpg" alt="Spinach Cheesebread">
+                    <p class="menu-item__description">Organic baby spinach. Served with our famous green sauce on the side.</p>
+                    <span class="menu-item__price">$21</span>
+                </li>
+                <li class="menu-item">
+                    <h3>Prosciutto Cheeseboat</h3>
+                    <p class="menu-item__description">Prosciutto di Parma. Served with our famous green sauce on the side.</p>
+                    <span class="menu-item__price">$28</span>
+                </li>
+                <li class="menu-item">
+                    <h3>Bubba Cheeseboat</h3>
+                    <p class="menu-item__description">Shrimps marinated in wine & butter sauce. Served with our famous green sauce on the side.</p>
+                    <span class="menu-item__price">$28</span>
+                </li>
+                <li class="menu-item">
+                    <h3>Smoked Gouda Cheeseboat</h3>
+                    <img src="images/IMG_2596.jpg" alt="Smoked Gouda Cheeseboat">
+                    <p class="menu-item__description">Smoked gouda cheese along with our cheese mix and topped with scallions. Served with our famous green sauce on the side.</p>
+                    <span class="menu-item__price">$23</span>
+                </li>
+                <li class="menu-item">
+                    <h3>Magic Mushroom Cheeseboat</h3>
+                    <p class="menu-item__description">Oyster mushrooms and tarragon. Served with our famous green sauce on the side.</p>
+                    <span class="menu-item__price">$23</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Dessert Section -->
+    <section id="dessert" class="section">
+        <div class="container">
+            <div class="section-heading">Desserts</div>
+            <div class="menu-item">
+                <h3>Napoleon</h3>
+                <p class="menu-item__description">Layers of crispy pastry filled cream patisserie <span class="menu-item__price">$15</span></p>
+            </div>
+            <div class="menu-item">
+                <h3>HONEY CAKE</h3>
+                <img src="images/honeycake.jpg" alt="Honey Cake">
+                <p class="menu-item__description">Honey and soft cream layers <span class="menu-item__price">$15</span></p>
+            </div>
+            <div class="menu-item">
+                <h3>Matsoni Cheesecake</h3>
+                <p class="menu-item__description">Georgia’s classic cheesecake made with matsoni yogurt and wild berry sauce <span class="menu-item__price">$15</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drinks Section -->
+    <section id="drinks" class="section">
+        <div class="container">
+            <div class="section-heading">Drinks</div>
+            <ul class="clearfix">
+                <li class="menu-item">
+                    <p class="menu-item__heading menu-item__heading--name">Old Fashioned</p>
+                    <img src="images/Coctail 1.jpg" alt="Old Fashioned">
+                    <p class="menu-item__description">Rye, house-spiced syrup, bitters</p>
+                    <span class="menu-item__price">$16</span>
+                </li>
+                <li class="menu-item">
+                    <p class="menu-item__heading menu-item__heading--name">Georgia on my Mind</p>
+                    <img src="images/coctail 2.jpg" alt="Georgia on my Mind">
+                    <p class="menu-item__description">Vodka, lemon, elderflower, peach, sparkling wine</p>
+                    <span class="menu-item__price">$14</span>
+                </li>
+                <li class="menu-item">
+                    <p class="menu-item__heading menu-item__heading--name">Black Sea Spritz</p>
+                    <p class="menu-item__description">Black rum, house-spiced syrup, soda</p>
+                    <span class="menu-item__price">$14</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-heading">Contact Us</div>
+            <p>123 Cheese Boat Road, Cheeseland, CH 12345</p>
+            <p>Email: contact@cheeseboat.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reserve" class="section">
+        <div class="container">
+            <div class="section-heading">Reserve a Table</div>
+            <p>Book your table online for a delightful dining experience.</p>
+            <a href="https://example.com/reservation-form" class="reserve-button">Reserve Now</a>
+        </div>
+    </section>
+</body>
+</html>
